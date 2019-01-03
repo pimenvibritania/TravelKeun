@@ -9,13 +9,13 @@ public class Travel {
     private int jumlah;
     private String nTravel;
     private String img_url;
-    private Text desk;
+    private String desk;
 
     public Travel(){
 
     }
 
-    public Travel(String nPerusahaan, String alamat, int jumlah, String nTravel, String img_url, Text desk) {
+    public Travel(String nPerusahaan, String alamat, int jumlah, String nTravel, String img_url, String desk) {
         this.nPerusahaan = nPerusahaan;
         this.alamat = alamat;
         this.jumlah = jumlah;
@@ -24,7 +24,7 @@ public class Travel {
         this.desk = desk;
     }
 
-    public Text getDesk() {
+    public String getDesk() {
         return desk;
     }
 
@@ -48,7 +48,7 @@ public class Travel {
         return img_url;
     }
 
-    public void setDesk(Text desk) {
+    public void setDesk(String desk) {
         this.desk = desk;
     }
 

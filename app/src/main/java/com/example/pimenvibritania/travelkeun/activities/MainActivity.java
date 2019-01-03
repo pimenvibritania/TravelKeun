@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                         travel.setJumlah(jsonObject.getInt("jumlah" ));
                         travel.setAlamat(jsonObject.getString("alamat"));
                         travel.setImg_url(jsonObject.getString("n_img"));
+                        travel.setDesk(jsonObject.getString("deskripsi"));
                         lstTravel.add(travel);
 
                     } catch (JSONException e) {

@@ -6,7 +6,8 @@
     android:layout_height="150dp"
     android:layout_marginTop="5dp"
     android:padding="8dp"
-    android:background="#008477">
+    android:background="#008477"
+    android:id="@+id/container">
     
     <ImageView
         android:layout_width="100dp"
