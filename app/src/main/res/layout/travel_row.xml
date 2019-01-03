@@ -6,7 +6,7 @@
     android:layout_height="150dp"
     android:layout_marginTop="5dp"
     android:padding="8dp"
-    android:background="#fff">
+    android:background="#008477">
     
     <ImageView
         android:layout_width="100dp"
@@ -26,6 +26,7 @@
             android:id="@+id/travel_name"
             android:text="Travel Name"
             android:textStyle="bold"
+            android:textColor="@android:color/white"
             android:textSize="18sp"/>
 
         <TextView
@@ -33,21 +34,38 @@
             android:layout_height="wrap_content"
             android:id="@+id/perusahaan_name"
             android:text="Perusahaan"
+            android:textColor="@android:color/white"
             android:layout_marginTop="3dp"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/jumlah"
-            android:text="100"
-            android:layout_marginTop="10dp"
-            android:textSize="14dp"
-            android:textStyle="bold"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/jumlah"
+                android:text="100"
+                android:textColor="@android:color/white"
+                android:layout_marginTop= "10dp"
+                android:textSize="14dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="14dp"
+
+                android:text="Kendaraan"/>
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/alamat"
+            android:textColor="@android:color/white"
             android:text="Alamat"
             android:layout_marginTop="5dp"/>
 

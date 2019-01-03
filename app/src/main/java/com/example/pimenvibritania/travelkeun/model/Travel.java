@@ -1,5 +1,7 @@
 package com.example.pimenvibritania.travelkeun.model;
 
+import org.w3c.dom.Text;
+
 public class Travel {
 
     private String nPerusahaan;
@@ -7,17 +9,23 @@ public class Travel {
     private int jumlah;
     private String nTravel;
     private String img_url;
+    private Text desk;
 
     public Travel(){
 
     }
 
-    public Travel(String nPerusahaan, String alamat, int jumlah, String nTravel, String img_url) {
+    public Travel(String nPerusahaan, String alamat, int jumlah, String nTravel, String img_url, Text desk) {
         this.nPerusahaan = nPerusahaan;
         this.alamat = alamat;
         this.jumlah = jumlah;
         this.nTravel = nTravel;
         this.img_url = img_url;
+        this.desk = desk;
+    }
+
+    public Text getDesk() {
+        return desk;
     }
 
     public String getnPerusahaan() {
@@ -38,6 +46,10 @@ public class Travel {
 
     public String getImg_url() {
         return img_url;
+    }
+
+    public void setDesk(Text desk) {
+        this.desk = desk;
     }
 
     public void setnPerusahaan(String nPerusahaan) {
